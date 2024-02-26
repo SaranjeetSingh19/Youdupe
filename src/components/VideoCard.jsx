@@ -1,7 +1,7 @@
 import React from "react";
 
 const VideoCard = ({ info }) => {
-  console.log(info);
+  // console.log(info);
 
   return (
     <div className="text-white ml-5 mt-6 w-72  hover:shadow-md hover:shadow-white transition ease-linear duration-150 cursor-pointer">
