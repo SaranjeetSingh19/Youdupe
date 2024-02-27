@@ -12,7 +12,7 @@ const Comment = ({ info }) => {
   const { name, comment } = info;
 
   return (
-    <div className="flex mb-4">
+    <div className="flex mb-4 ">
       <div className="rounded-full w-10 pt-0.5 h-10 text-center bg-zinc-800">
         <FontAwesomeIcon
           icon={faUserSecret}

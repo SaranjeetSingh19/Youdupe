@@ -88,7 +88,11 @@ const Header = () => {
           placeholder="Search"
         />
         <button className="text-2xl -ml-14 border-2  rounded-r-full border-gray-700 bg-[#222222] px-4 outline-none">
-        <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "#ffffff",}} className="bg-transparent text-xl" />
+          <FontAwesomeIcon
+            icon={faMagnifyingGlass}
+            style={{ color: "#ffffff" }}
+            className="bg-transparent text-xl"
+          />
         </button>
 
         {showSuggestion && (
@@ -99,8 +103,12 @@ const Header = () => {
                   key={sugg}
                   className="mb-2 pl-8 hover:bg-slate-800 p-1 transition ease-in duration-150"
                 >
-                    <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "#ffffff",}} className="bg-transparent text-xl mr-3" />
-                   {sugg}
+                  <FontAwesomeIcon
+                    icon={faMagnifyingGlass}
+                    style={{ color: "#ffffff" }}
+                    className="bg-transparent text-xl mr-3"
+                  />
+                  {sugg}
                 </li>
               ))}
             </ul>
@@ -115,7 +123,10 @@ const Header = () => {
       </div>
 
       <div className="nav-right flex items-center justify-around">
-        <FontAwesomeIcon icon={faVideoCamera} className="text-[21px] mr-6 transition ease-out duration-150 hover:scale-110 cursor-pointer  text-white" />
+        <FontAwesomeIcon
+          icon={faVideoCamera}
+          className="text-[21px] mr-6 transition ease-out duration-150 hover:scale-110 cursor-pointer  text-white"
+        />
 
         <FontAwesomeIcon
           icon={faBell}

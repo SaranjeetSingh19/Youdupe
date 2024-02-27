@@ -6,6 +6,7 @@ import { YOUTUBE_VIDEOS_API } from "./utils/constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp, faThumbsDown } from "@fortawesome/free-solid-svg-icons";
 import CommentContainer from "./CommentContainer";
+import LiveChat from "./LiveChat";
 
 const WatchPage = () => {
   const dispatch = useDispatch();
@@ -80,7 +81,7 @@ const WatchPage = () => {
 
   return (
     <div className="text-white ml-10 mt-4 ">
-      <div className=" ">
+      <div className="flex ">
         <iframe
           className=" rounded-xl "
           width="700"
@@ -91,9 +92,12 @@ const WatchPage = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe>
+        <div className="">
+          <LiveChat />
+        </div>
       </div>
 
-      <h1 className="text-xl font-semibold w-[60vw] mt-4">
+      <h1 className="text-xl font-semibold w-[55vw] mt-4">
         {res[0]?.snippet?.title}
       </h1>
 
@@ -152,7 +156,7 @@ const WatchPage = () => {
         </h1>
       </div>
 
-      <h1 className="text-xl font-semibold mt-6">
+      <h1 className="text-xl font-semibold  mt-6">
         {res[0]?.statistics?.commentCount} Comments
       </h1>
 
