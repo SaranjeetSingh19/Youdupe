@@ -37,3 +37,7 @@
 # Used Caching to store fetched data
 
 - Stored user's searching results in redux store so, caching can be performed and for already searched results api calls won't get generated again and again.
+
+# Live chat via API Polling 
+- Used dummy data and performed API Polling in live chat feature.
+- Also user can append it's own custom messages into live chat.

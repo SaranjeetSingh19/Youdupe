@@ -1,8 +1,6 @@
 import React from "react";
 
 const VideoCard = ({ info }) => {
-  // console.log(info);
-
   function formatViews(numViews) {
     // Handle negative numbers
     if (numViews < 0) {

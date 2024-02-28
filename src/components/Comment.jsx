@@ -7,8 +7,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const Comment = ({ info }) => {
-  console.log(info);
-
   const { name, comment } = info;
 
   return (
@@ -38,14 +36,17 @@ const Comment = ({ info }) => {
 };
 
 export const CommentList = ({ comments }) => {
-  return (comments && comments.map((comment) => (
-    <div>
-      <Comment info={comment} />
-      <div className="ml-10 border-l-2 border-slate-700">
-        <CommentList comments={comment.replies} />
+  return (
+    comments &&
+    comments.map((comment, index) => (
+      <div key={index}>
+        <Comment info={comment} />
+        <div className="ml-10 border-l-2 border-slate-700">
+          <CommentList comments={comment.replies} />
+        </div>
       </div>
-    </div>
-  )))
+    ))
+  );
 };
 
 export default Comment;

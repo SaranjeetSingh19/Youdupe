@@ -45,7 +45,6 @@ const Header = () => {
     const data = await fetch(YOUTUBE_SEARCH_KEY + searchQuerry);
     const json = await data.json();
     setSuggestions(json[1]);
-    // console.log(json);
 
     dispatch(
       cacheResults({

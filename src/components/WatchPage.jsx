@@ -31,7 +31,6 @@ const WatchPage = () => {
   const res = videos.filter((vido) => {
     return vido.id === setParams.get("v");
   });
-  console.log(res);
 
   function timeSince(dateString) {
     const date = new Date(dateString);
@@ -51,7 +50,6 @@ const WatchPage = () => {
   }
   const myDate = res[0]?.snippet?.publishedAt;
   const timeText = timeSince(myDate);
-  console.log(timeText);
 
   function formatViews(numViews) {
     // Handle negative numbers
@@ -97,7 +95,7 @@ const WatchPage = () => {
         </div>
       </div>
 
-      <h1 className="text-xl font-semibold w-[55vw] mt-4">
+      <h1 className="text-xl font-semibold w-[55vw] -mt-12">
         {res[0]?.snippet?.title}
       </h1>
 

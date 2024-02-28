@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const LiveMessages = ({ name, message }) => {
   return (
-    <div className="flex mt-3 px-2">
+    <div className="flex mt-3 px-2 z-40">
       <div className="rounded-full pl-2 w-8 pb-1 h-8 flex items-center  bg-zinc-800">
         <FontAwesomeIcon
           icon={faUserSecret}
